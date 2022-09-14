@@ -15,17 +15,26 @@
     <header>
         <div class="top-menu">
             <div class="container">
-                <div>
+                <div class="site-settings">
                     <div class="dropdown dropdown-theme">
                         <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="selected-language">ENG</span>
+                            <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down ms-3"></i>
                         </button>
-                        <ul class="dropdown-menu">
+                        <ul id="languages" class="dropdown-menu dropdown-theme me-3">
                           <li><a class="dropdown-item" href="#">ENG</a></li>
                           <li><a class="dropdown-item" href="#">SWE</a></li>
-                          
                         </ul>
-                      </div>
+                    </div>
+                    <div class="dropdown dropdown-theme">
+                        <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down ms-3"></i>
+                        </button>
+                        <ul id="currencies" class="dropdown-menu dropdown-theme me-3">
+                            <li><a class="dropdown-item" href="#">EUR</a></li>
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">SEK</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="menu-links">
                     <a href="#">Newsletter</a>
@@ -37,10 +46,10 @@
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
                 </div>
             </div>
         </div>
+        
         
     </header>
    

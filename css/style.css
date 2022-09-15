@@ -96,10 +96,7 @@ html, body {
                         color: var(--color-theme-dark);
                 }
                 
-    .top-menu .menu-links {
-       
-      
-    }
+   
 
     .top-menu .menu-links a {
         color: var(--color-white);
@@ -113,6 +110,7 @@ html, body {
 
     .top-menu .menu-links .social-media {
         margin-left: 1rem;
+        font-size: var(--font-size-14);
     }
         .top-menu .menu-links .social-media a {
             margin:0.3rem;

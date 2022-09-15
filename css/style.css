@@ -56,7 +56,7 @@ html, body {
     .top-menu >.container {
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
    
     }
@@ -129,12 +129,13 @@ html, body {
     .top-menu .menu-links{
         display: block;
     }
-}
-
-@media(min-width: 992px){
     .top-menu > .container{
         justify-content: space-between;
     }
+}
+
+@media(min-width: 992px){
+
     .top-menu .menu-links .links {
         display: inline;
     }

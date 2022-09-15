@@ -125,6 +125,50 @@ html, body {
             margin: 0 0 0 0.3rem;
             }
 
+/* main-menu */
+.main-menu{
+    padding: 2rem 0;
+}
+
+    .main-menu .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-menu .brand{
+        flex:2;
+    }
+    .main-menu .search{
+        flex:3;
+    }
+    .main-menu .links{
+        flex:2;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(min-width: 578px){
     .top-menu .menu-links{
         display: block;

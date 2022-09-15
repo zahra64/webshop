@@ -94,10 +94,16 @@ html, body {
                     .top-menu .site-settings .dropdown-theme .dropdown-item:hover {
                         background-color: var(--color-theme);
                         color: var(--color-theme-dark);
-                }
-                
-   
+    
+                    }
 
+    .top-menu .menu-links{
+        display: none;
+    }            
+   
+    .top-menu .menu-links .links {
+        display: none;
+    }
     .top-menu .menu-links a {
         color: var(--color-white);
         text-decoration: none;
@@ -119,9 +125,20 @@ html, body {
             margin: 0 0 0 0.3rem;
             }
 
+@media(min-width: 578px){
+    .top-menu .menu-links{
+        display: block;
+    }
+}
 
-
-            
+@media(min-width: 992px){
+    .top-menu > .container{
+        justify-content: space-between;
+    }
+    .top-menu .menu-links .links {
+        display: inline;
+    }
+}           
 
 
 

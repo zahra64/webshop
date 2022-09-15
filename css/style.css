@@ -105,7 +105,6 @@ html, body {
         display: none;
     }
     .top-menu .menu-links a {
-        display: none;
         color: var(--color-white);
         text-decoration: none;
         margin: 0 1.2rem; 
@@ -120,7 +119,7 @@ html, body {
         font-size: var(--font-size-14);
     }
         .top-menu .menu-links .social-media a {
-            margin:0.3rem;
+            margin: 0 0.3rem;
         }
             .top-menu .menu-links .social-media a:last-child {
             margin: 0 0 0 0.3rem;

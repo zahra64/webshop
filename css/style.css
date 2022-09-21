@@ -58,6 +58,20 @@ html, body {
         color: var(var(--color-white)) ;
     }
 
+    .btn-white {
+        background-color: var(--color-white);
+        color: var(--color-theme);
+        border-radius: var(--border-radius-medium);
+        font-weight: var(--font-weight-medium);
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+
+    }
+        .btn-white:hover {
+            background-color: var(--color-theme-dark);
+            color: var(--color-white) ;
+        }
+
 /* top-menu */
 .top-menu {
     background-color: var(--color-theme);
@@ -234,46 +248,38 @@ html, body {
     }
 
 
+
+
+
 /* showcase */
-.showcase {
+ .showcase {
     background-color: var(--color-gray-3);
 }
     .showcase .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+       text-align: center;
+       padding-top: 2.4rem;
+       padding-bottom: 2.4rem;
+
    }
 
-   .showcase .showcase-body {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 3rem 1rem;
-   }
     .showcase .showcase-body h1 {
+        font-size: 3.5rem;
         font-family: var(--font-play);
-        font-size: 3.8rem;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
+     }
         .showcase .showcase-body h1 strong {
             font-weight: var(--font-weight-bold);
             color: var(--color-theme);
         }
 
-        .showcase .showcase-body p {
-            display: none;
-        }
-        
-        .showcase .showcase-body a {
-            display: block;
-        }
-    
-    .showcase img {
-     display: none;
+    .showcase .showcase-body p {
+        margin: 2rem 0;
     }
 
 
+    .showcase img {
+        display: none;
+    }
+       
 
 @media(min-width: 578px){
     .top-menu .menu-links{
@@ -286,13 +292,11 @@ html, body {
 
 @media(min-width: 768px) {
     .showcase .showcase-body h1 {
-       font-size: var(--font-size-60);
-    }
-    .showcase .showcase-body p {
+        font-size: var(--font-size-60)
+     }
+     .showcase .showcase-body h1 strong {
         display: block;
-        text-align: center;
-        margin-bottom: 2.4rem;
-    }
+     }
 }  
 
 @media(min-width: 992px){
@@ -300,88 +304,30 @@ html, body {
     .top-menu .menu-links .links {
         display: inline;
     }
-
-    .showcase .showcase-body  {
-        justify-content: start;
-       
-        
-    }
-
-    .showcase .showcase-body h1 {
-        justify-content: start;
+    .showcase .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         text-align: left;
-        
-    }
-    .showcase .showcase-body p {
-       text-align: left;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .showcase img {
-        
         display: block;
         width: 50%;
-        height: 100%;
     }
-    
-}           
-
-@media(min-width: 1200px) {
-
-}
-
-
-/* showcase */
-/* .showcase {
-    background-color: var(--color-gray-3);
-}
-    .showcase .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-   }
-
-    .showcase .showcase-body h1 {
-        font-size: var(--font-size-60);
-        font-family: var(--font-play);
-        
-      
-    }
-        .showcase .showcase-body h1 strong {
-            font-weight: var(--font-weight-bold);
-            color: var(--color-theme);
-        }
-        
-        .showcase .showcase-body a {
-            display: inline-block;
-        }
-    
-    .showcase img {
-     display: none;
-    }
-
-
-
-@media(min-width: 578px){
-    .top-menu .menu-links{
-        display: block;
-    }
-    .top-menu > .container{
-        justify-content: space-between;
-    }
-}
-
-@media(min-width: 768px) {
-
-}  
-
-@media(min-width: 992px){
-
-    .top-menu .menu-links .links {
-        display: inline;
-    }
-
      
 }           
 
 @media(min-width: 1200px) {
-
-} */
+    .showcase .showcase-body {
+        flex: 1;
+    }
+    .showcase .showcase-body p {
+       width: 80%;
+    }
+    .showcase img {
+        flex: 1;
+        width: 100%;
+    }
+} 

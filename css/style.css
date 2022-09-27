@@ -3,6 +3,7 @@
     --color-theme:#20D3C2;
     --color-theme-light:#EDFCFA;
     --color-theme-dark:#0E153D;
+    --color-theme-dark-light:#50546E;
     --color-dark:#080C24;
     --color-white:#FFFFFF;
     --color-gray-0:#AAAAAA;
@@ -559,9 +560,54 @@ html, body {
 
 
 
+/* page 2 */
+.site-title {
+    background-color:var(--color-theme-dark-light);
+    color: var(--color-white);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.site-title .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-title h1 {
+    color: var(--color-theme);
+    font-size: 1.5rem;
+    margin: 0;
+    font-family: var(--font-roboto);
+    font-weight: var(--font-weight-medium);
+}
+.site-title nav ul {
+    display: flex;
+    align-items: centar;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-
-
+.site-title .breadcrumb {
+    list-style: none;
+    margin: 0;
+}
+    .site-title .breadcrumb li {
+        display: inline;
+        font-size: 18px;
+    }
+        .site-title .breadcrumb li+li::before {
+            padding: 0 0.7rem 0 1rem;
+            color: var(--color-white);
+            content: "/\00a0";
+        }
+        .site-title .breadcrumb li a {
+            color: var(--color-theme);
+            text-decoration: none;
+        }
+            .site-title .breadcrumb li a:hover {
+                color: var(--color-theme-light);
+                text-decoration: underline;
+            }
 
 
 

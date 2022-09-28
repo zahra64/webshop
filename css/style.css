@@ -111,7 +111,73 @@ html, body {
     .section-title p {
         margin: 1rem 0;;
     }
-  
+
+a {
+    color: var(--color-theme);
+    font-weight: var(--font-weight-regular);
+    text-decoration: none;
+
+  }
+    a:hover {
+    color: var(--color-theme-dark);
+    text-decoration: underline;
+    }
+
+.form-theme .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-gray-4);
+}
+
+
+    .form-theme .card .card-body h1 {
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-theme-dark);
+        font-size: 1.5rem;
+    }
+
+    .form-theme .card .card-body .card-text {
+        margin: 1.5rem 0;
+        line-height: 2;
+    }
+
+        .form-theme .card .card-body .card-text a {
+            font-weight: var(--font-weight-medium);
+           
+        }
+
+        .form-theme .card .card-body .card-text.text-small {
+            color: var(--color-gray-5);
+            font-size: 0.875rem;
+        }
+
+        .form-theme form input[type=checkbox] {
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+        }
+
+        .form-theme form input[type=text],
+        .form-theme form input[type=email],
+        .form-theme form input[type=password]{
+            display: block;
+            width: 100%;
+            border: none;
+            border-radius: var(--border-radius-small);
+            padding: 0.6rem 0.9rem;
+            margin: 0.2rem 0;
+        }   
+        .form-theme form input:focus {
+            outline: 0;
+            box-shadow: 0 0 3px 0 var(--color-gray-0);
+        }
+
+
+
+
+
     
 /* top-menu */
 .top-menu {
@@ -626,50 +692,59 @@ html, body {
         align-items: start;
     }
 
-.signup-signin .card {
-    padding: 1.5rem;
-    border: none;
-    border-radius: var(--border-radius-small);
-    background-color: var(--color-gray-4);
+.external-logins {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
 }
-    
-
-    .signup-signin .card .card-body h1 {
-        font-family: var(--font-roboto);
-        font-weight: var(--font-weight-medium);
-        color: var(--color-theme-dark);
-        font-size: 1.5rem;
+    .external-logins .label {
+        background-color: var(--color-gray-4);
+        padding: 0 1rem;
+        z-index: 2;
     }
-
-    .signup-signin .card .card-body .card-text {
-        margin: 1.5rem 0;
-        line-height: 2;
-    }
-
-        .signup-signin .card .card-body .card-text.text-small {
-            color: var(--color-gray-5);
-            font-size: 0.875rem;
+        .external-logins .line {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            right: 0;
+            border: 1px solid var(--color-gray-0);
+            z-index: -1;
+            opacity: 0.5;
         }
 
-#signupForm input {
-    display: block;
-    width: 100%;
-    border: none;
-    border-radius: var(--border-radius-small);
-    padding: 0.6rem 0.9rem;
-    margin: 0.2rem 0;
-}   
-    #signupForm input:focus {
-        outline: 0;
-        box-shadow: 0 0 3px 0 var(--color-gray-0);
+.external-socialmedia-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+    .external-socialmedia-buttons .facebook-button {
+        text-align: left;
     }
 
+    .external-socialmedia-buttons .facebook-button button {
+        background-image: url(../images/buttons/facebook-login-button.svg);
+        background-repeat:no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+    }
+    .external-socialmedia-buttons .google-button {
+        text-align: right;
+    }
 
+    .external-socialmedia-buttons .google-button button {
+        background-image: url(../images/buttons/google-login-button.svg);
+        background-repeat:no-repeat;
+        border: none;
+        height: 42px;
+        width: 235px;
+    }
 
-
-
-
-
+    .external-socialmedia-buttons .facebook-button button:hover,
+    .external-socialmedia-buttons .google-button button:hover {
+        filter: brightness(90%);
+    }
 
 
 

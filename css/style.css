@@ -11,6 +11,7 @@
     --color-gray-2:#E3E3E3;
     --color-gray-3:#EEEEEE;
     --color-gray-4:#F6F6F6;
+    --color-gray-5:#777777;
     --color-product-instock:#82D8C6;
     --color-product-outofstock:#FE6C6C;
 
@@ -56,7 +57,7 @@ html, body {
 }
     .btn-theme:hover {
         background-color: var(--color-theme-dark);
-        color: var(var(--color-white)) ;
+        color: var(--color-white) ;
     }
 
 .btn-white {
@@ -76,9 +77,11 @@ html, body {
 .bg-theme {
     background-color: var(--color-theme);
 }
+
 .text-theme {
     color: var(--color-theme);
 }
+
 .instock {
     color: var(--color-product-instock);
 }
@@ -87,6 +90,9 @@ html, body {
     color: var(--color-product-outofstock);
 }
 
+.required {
+    color: var(--color-theme);
+}
 .section-title {
     padding: 3rem 0;
     color: var(--color-theme-dark);
@@ -610,12 +616,53 @@ html, body {
             }
 
 
+.signup-signin {
+    margin: 6rem 0;
+}
+    .signup-signin .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: start;
+    }
 
+.signup-signin .card {
+    padding: 1.5rem;
+    border: none;
+    border-radius: var(--border-radius-small);
+    background-color: var(--color-gray-4);
+}
+    
 
+    .signup-signin .card .card-body h1 {
+        font-family: var(--font-roboto);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-theme-dark);
+        font-size: 1.5rem;
+    }
 
+    .signup-signin .card .card-body .card-text {
+        margin: 1.5rem 0;
+        line-height: 2;
+    }
 
+        .signup-signin .card .card-body .card-text.text-small {
+            color: var(--color-gray-5);
+            font-size: 0.875rem;
+        }
 
-
+#signupForm input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: var(--border-radius-small);
+    padding: 0.6rem 0.9rem;
+    margin: 0.2rem 0;
+}   
+    #signupForm input:focus {
+        outline: 0;
+        box-shadow: 0 0 3px 0 var(--color-gray-0);
+    }
 
 
 

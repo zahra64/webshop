@@ -918,7 +918,8 @@ a {
                 .top-sellers .card.male-pic:hover .card-body .card-old-price,
                 .top-sellers .card.male-pic:hover .card-body .card-discount-price,
                 .top-sellers .card.male-pic:hover .card-body .text-theme,
-                .top-sellers .card.male-pic:hover .card-body button {
+                .top-sellers .card.male-pic:hover .card-body button,
+                .top-sellers .card.male-pic:hover .card-body h1 {
                     position: relative;
                     bottom :8rem;
                     
@@ -942,10 +943,6 @@ a {
                     transition: 0.3s ease-in-out;
                     font-weight: var(--font-weight-regular);
                 }
-                    .top-sellers .card.male-pic:hover .card-body h1{
-                        margin-bottom: 0;
-                    }
-    
 
             .top-sellers .card .card-body button {
                 background-color: transparent;

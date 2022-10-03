@@ -903,6 +903,28 @@ a {
         .top-sellers .card:hover .card-body {
             height: 60%;
         }
+           
+            
+            .top-sellers .card.male-pic .card-body {
+                position: relative;
+                height: 14%;
+                width: 100%;
+                color: var(--color-white);
+                z-index: 1;
+                transition: 0.3s ease-in-out;
+                font-size: 1rem;
+            }
+            
+                .top-sellers .card.male-pic:hover .card-body .card-old-price,
+                .top-sellers .card.male-pic:hover .card-body .card-discount-price,
+                .top-sellers .card.male-pic:hover .card-body .text-theme,
+                .top-sellers .card.male-pic:hover .card-body button {
+                    position: relative;
+                    bottom :8rem;
+                    
+                }
+        
+        
             .top-sellers .card .card-body h1 {
                 font-size: 1.125rem;
                 margin-bottom: 3rem;

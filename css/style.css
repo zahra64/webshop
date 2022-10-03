@@ -913,6 +913,18 @@ a {
                     margin-bottom: 0;
                 }
 
+                 
+                .top-sellers .card.male-pic .card-body h1 {
+                    font-size: 1.125rem;
+                    margin-top: 2.6rem;
+                    transition: 0.3s ease-in-out;
+                    font-weight: var(--font-weight-regular);
+                }
+                    .top-sellers .card.male-pic:hover .card-body h1{
+                        margin-bottom: 0;
+                    }
+    
+
             .top-sellers .card .card-body button {
                 background-color: transparent;
                 color: var(--color-white);
@@ -933,6 +945,22 @@ a {
                 font-size: 1.5em;
                 margin: 0;
             }
+
+
+
+    .top-sellers .card.male-pic .card-background {
+        position: absolute;
+        bottom: 0;
+        height: 6%;
+        width: 100%;
+        background-color: var(--color-theme-dark);
+        opacity: 0.90;
+        transition: height 0.3s ease-in-out;
+
+    }
+        .top-sellers .card.male-pic:hover .card-background {
+            height: 100%;
+        }
 
     .top-sellers .card .card-background {
         position: absolute;

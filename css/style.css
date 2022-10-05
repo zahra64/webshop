@@ -806,7 +806,8 @@ a {
                     display:block;
                     font-size: var(--font-size-60);
                     font-weight: var(--font-weight-bold);
-                    font-family: var(--font-play);    
+                    font-family: var(--font-play); 
+                    margin-top: -1rem;     
                 }
         
                 .flashSale-left-side  p {

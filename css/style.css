@@ -766,13 +766,11 @@ a {
 
      /* ------------------------------------------------ */
      /* flash-sale */
-
+     
      .flash-sale {
         margin-top: 10rem;
         background-color: var(--color-theme-dark-opacity);
-        height: 510px;
-        
-       
+         height: 510px;    
     }
         .flash-sale .container {
             display: flex;
@@ -784,44 +782,44 @@ a {
                 background-color: var(--color-theme);
                 color: var(--color-white);
                 display: flex; 
+                align-items: center;
+                flex:1;
                 justify-content: center;
                 flex-direction: column;
-                text-align: center;
+                text-align: start;
                 padding-left: 2rem;
                 padding-right: 2rem;
-                height: 20rem;
-                
+                height: 20rem;         
             }
         
                 .flashSale-left-side h1 {
                     text-align: center;
-                    margin-top:6.5rem ;
+                    margin-top:9rem ;
                     font-family: var(--font-play);
                     font-size: var(--font-size-60);
-                    font-weight: var(--font-weight-bold);
-                
-                    
+                    font-weight: var(--font-weight-bold);       
                 }
+
                 .flashSale-left-side h1 strong {
                     display:block;
                     font-size: var(--font-size-60);
                     font-weight: var(--font-weight-bold);
-                    font-family: var(--font-play); 
-                    margin-top: -1rem;     
+                    font-family: var(--font-play);  
+                    margin-top: -1rem;  
                 }
         
                 .flashSale-left-side  p {
                     font-family: var(--font-roboto);
                     font-size: var(--font-size-24);
                     font-weight: var(--font-weight-medium);
-                    padding-bottom: 4rem;
+                    padding-bottom: 5.3rem;
                     text-align: center;
-                    margin-left: 2.5rem;
-                    margin-bottom: 3.5rem;
+                    margin-bottom: 4rem;
                     
                 }
                 .flashSale-right-side {
                     display: flex;
+                    flex: 5;
                     flex-direction: column;
                     margin-top: 7.6rem;   
                     position: relative;
@@ -865,12 +863,9 @@ a {
                     }
 
                     .flashSale-right-side a  {
-                        position: relative;
+                        position: absolute;
                         right: 14rem;
                         top: 12.5rem;
-                   
-
-                    
                     }
 
 /*---------------------------------------------------*/
